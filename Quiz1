@@ -8,7 +8,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FPUMSDataDict06.pdf
 
 How many properties are worth $1,000,000 or more?
 
-Answer: 
+Answer: 53
 fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
 destfile <- "data.csv"
 download.file(fileUrl, destfile)
@@ -31,7 +31,7 @@ What is the value of:
 sum(dat$Zip*dat$Ext,na.rm=T) 
 (original data source: http://catalog.data.gov/dataset/natural-gas-acquisition-program)
 
-Answer:
+Answer: 36534720
 library(xlsx)
 fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FDATA.gov_NGAP.xlsx"
 destfile <- "NatureGas.xlsx"
@@ -47,7 +47,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml
 
 How many restaurants have zipcode 21231?
 
-Answer:
+Answer: 127
 library(XML)
 fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata/data/restaurants.xml"
 doc <- xmlTreeParse(file=fileUrl,useInternal=TRUE)
@@ -66,7 +66,7 @@ Which of the following is the fastest way to calculate the average value of the 
 pwgtp15 
 broken down by sex using the data.table package?
 
-Answer:
+Answer: DT[,mean(pwgtp15),by=SEX]
 
 fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
 destfile <- "Fss.csv"
